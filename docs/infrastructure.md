@@ -2,7 +2,7 @@
 
 - db - postgres/mongodb
 - server nodejs(nestjs)
-- web - nextjs
+- web - nextjs, tailwindcss
 - auth - aws cognito/firebase/clerk
 - hosting - vercel, heroku, neon.dev, (can consider aws)
 - dockerize everything??

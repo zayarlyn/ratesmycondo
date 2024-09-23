@@ -3,4 +3,4 @@
 
 ## how to verify tenant?
 
-- maybe by tm30? (assuming no one will to too far to fake tm30 just to give review)
+- [Thailand] maybe by tm30? (assuming no one will to too far to fake tm30 just to give review)
