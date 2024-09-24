@@ -25,6 +25,9 @@
 - content
 - rating (1-10)
 - room_type (studio, 1b, 2b)
+- room_size (sqm)
+- rented (true/false)
+- year (2021)
 - resident_id
 - rating_id
 - images
