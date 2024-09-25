@@ -42,7 +42,7 @@
 ### rating_item
 
 - name
-- type
+- code
 - rating
 
 ### user
