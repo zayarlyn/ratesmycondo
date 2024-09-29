@@ -4,11 +4,10 @@ import { InjectDataSource } from '@nestjs/typeorm'
 import { DataSource, QueryRunner } from 'typeorm'
 import { GraphQLError } from 'graphql'
 
-import { Customer, Order, OrderProduct, Product, Staff } from '@db/entities'
-
 @Resolver()
 export class BaseMutationResolver {
-  entities = { OrderProduct, Product, Order, Staff, Customer }
+  // entities = { OrderProduct, Product, Order, Staff, Customer }
+  entities = {}
 
   constructor(@InjectDataSource() private dataSource?: DataSource) {}
 

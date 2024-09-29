@@ -1,0 +1,29 @@
+{
+	"name": "ratesmycondo",
+	"version": "1.0.0",
+	"description": "A platform to rate, review, and find the best condos based on user feedback.",
+	"main": "none",
+	"workspaces": [
+		"apps/web",
+		"backend"
+	],
+	"scripts": {
+		"dev:web": "cd apps/web && npm run dev",
+		"dev:backend": "cd backend && npm run dev",
+		"dev": "conc  npm:dev:*",
+		"install-all": "npm install --workspaces --if-present"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zayarlyn/ratesmycondo.git"
+	},
+	"author": "Zayar Lin",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/zayarlyn/ratesmycondo/issues"
+	},
+	"homepage": "https://github.com/zayarlyn/ratesmycondo#readme",
+	"devDependencies": {
+		"concurrently": "^9.0.1"
+	}
+}

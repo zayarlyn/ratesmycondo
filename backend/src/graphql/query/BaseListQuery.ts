@@ -1,4 +1,3 @@
-import { Product } from '@db/entities'
 import { ArgsType, Field, InputType, Resolver } from '@nestjs/graphql'
 import { InjectDataSource } from '@nestjs/typeorm'
 import { DataSource, FindOptionsRelations, FindOptionsWhere } from 'typeorm'
@@ -18,7 +17,7 @@ class QPagination {
 @ArgsType()
 export class QArgs {
   @Field(() => ObjectScalar, { nullable: true })
-  where: FindOptionsWhere<Product>
+  where: FindOptionsWhere<{}>
 
   @Field({ nullable: true })
   withDeleted: boolean = false
@@ -41,7 +40,7 @@ export class BaseListQueryResolver {
       where,
       withDeleted,
       ...pagination,
-      // select: ctx.selection,
+      select: ctx.selection,
       relations,
     })
   }

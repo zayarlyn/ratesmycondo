@@ -1,9 +1,9 @@
-import { Field, ID, Int, ObjectType } from '@nestjs/graphql'
+import { Field, ObjectType } from '@nestjs/graphql'
 
 @ObjectType()
 export class BaseType {
-  @Field(() => Int)
-  id: number
+  @Field()
+  id: string
 
   @Field()
   createdAt: Date
@@ -13,7 +13,4 @@ export class BaseType {
 
   @Field({ nullable: true })
   deletedAt?: Date
-
-  @Field()
-  vendorId: string
 }

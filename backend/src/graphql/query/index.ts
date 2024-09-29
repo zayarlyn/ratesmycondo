@@ -1,2 +1,1 @@
-export * from './ProductListQuery'
-export * from './OrderListQuery'
+export * from './ResidenceListQuery'

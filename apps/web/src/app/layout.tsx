@@ -32,7 +32,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<head></head>
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-				<header className='flex justify-between items-center rmc-p sticky top-0 left-0 bg-white'>
+				<header className='flex justify-between items-center rmc-p sticky top-0 left-0 bg-white z-10'>
 					<Link href='/'>
 						<Image src={LogoImg} alt='Rate My Condo' className='w-44' />
 					</Link>
